@@ -1,0 +1,41 @@
+{
+  "name": "college-discovery",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NEXT_DISABLE_SWC_BINARY=1 next dev",
+    "build": "cross-env NEXT_DISABLE_SWC_BINARY=1 next build",
+    "start": "next start",
+    "lint": "eslint . --ext .ts,.tsx",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev --name init",
+    "prisma:seed": "ts-node --transpile-only prisma/seed.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.15.0",
+    "bcryptjs": "2.4.3",
+    "clsx": "2.1.1",
+    "jsonwebtoken": "9.0.2",
+    "next": "14.2.35",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "2.4.2",
+    "@types/jsonwebtoken": "9.0.2",
+    "@types/node": "20.14.2",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "@typescript-eslint/eslint-plugin": "7.16.0",
+    "@typescript-eslint/parser": "7.16.0",
+    "autoprefixer": "10.4.19",
+    "cross-env": "7.0.3",
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.35",
+    "postcss": "8.4.40",
+    "prisma": "^5.15.0",
+    "tailwindcss": "3.4.4",
+    "ts-node": "10.9.1",
+    "typescript": "5.5.4"
+  }
+}
