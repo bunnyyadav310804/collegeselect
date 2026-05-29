@@ -1,4 +1,7 @@
-import { prisma } from "../../../lib/prisma";
+let prisma: any = undefined;
+try {
+  prisma = (await import("../../../lib/prisma")).prisma;
+} catch {}
 import { getFallbackCollege, CollegeItem } from "../../../lib/fallbackData";
 import Link from "next/link";
 
