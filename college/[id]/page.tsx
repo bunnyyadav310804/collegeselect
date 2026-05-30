@@ -1,8 +1,8 @@
 let prisma: any = undefined;
 try {
-  prisma = (await import("../../../lib/prisma")).prisma;
+  prisma = (await import("../../lib/prisma")).prisma;
 } catch {}
-import { getFallbackCollege, CollegeItem } from "../../../lib/fallbackData";
+import { getFallbackCollege, CollegeItem } from "../../lib/fallbackData";
 import Link from "next/link";
 
 interface CollegePageProps {

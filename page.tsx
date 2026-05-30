@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import type { CollegeItem } from "../lib/fallbackData";
+import type { CollegeItem } from "./lib/fallbackData";
 
 const sortOptions = [
   { value: "ratingDesc", label: "Best rating" },
